@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Town Liquor | Craft Beer, Wine & Spirits</title>
+    <meta
+      name="description"
+      content="Old Town Liquor offers premium beer, wine, spirits, mixers, and snacks for pickup and local delivery."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <p>Local pickup • Free curbside orders over $50 • 123 Main Street</p>
+        <a href="tel:+15550199">Call Us: (555) 0199</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-wrap">
+          <div class="brand-mark">OT</div>
+          <div>
+            <p class="eyebrow">Since 1998</p>
+            <h1>Old Town Liquor</h1>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#featured">Featured</a>
+          <a href="#collections">Collections</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+          <label class="search-box" aria-label="Search products">
+            <span>🔎</span>
+            <input id="searchInput" type="search" placeholder="Search products" />
+          </label>
+          <button id="cartButton" class="cart-button" aria-label="View cart">
+            Cart
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow accent">Curated bottles. Slow pours. Local favorites.</p>
+            <h2>Premium drinks for every gathering.</h2>
+            <p>
+              Discover beer, wine, spirits, mixers, and snacks selected for your next
+              night in or weekend celebration.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="primary-btn">Shop Now</a>
+              <a href="#collections" class="secondary-btn">Browse Collections</a>
+            </div>
+            <ul class="hero-points">
+              <li>Pickup in 30 minutes</li>
+              <li>Trusted local selections</li>
+              <li>Easy online ordering</li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="glass-card">
+              <span class="sparkle">✦</span>
+              <small>This Week</small>
+              <strong>Craft Beer Special</strong>
+              <p>Pick any 6 bottles and save 15%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="collections">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Browse</p>
+            <h3>Popular Categories</h3>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <span>🍺</span>
+              <h4>Beer</h4>
+              <p>Local IPAs, lagers, and seasonal pours</p>
+            </article>
+            <article class="category-card">
+              <span>🍷</span>
+              <h4>Wine</h4>
+              <p>Red, white, rosé, and celebratory bottles</p>
+            </article>
+            <article class="category-card">
+              <span>🥃</span>
+              <h4>Spirits</h4>
+              <p>Vodka, bourbon, tequila, gin, and rum</p>
+            </article>
+            <article class="category-card">
+              <span>🥤</span>
+              <h4>Mixers</h4>
+              <p>Club soda, tonics, juices, and garnishes</p>
+            </article>
+            <article class="category-card">
+              <span>🍿</span>
+              <h4>Snacks</h4>
+              <p>Perfect pairings for your next night in</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="featured">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow accent">Featured Picks</p>
+              <h3>Top sellers this week</h3>
+            </div>
+            <a href="#shop" class="text-link">View all products</a>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-card">
+              <p>Weekend Favorite</p>
+              <strong>Old Town Tasting Flight</strong>
+              <span>3 craft pours</span>
+            </div>
+            <div class="feature-card alt">
+              <p>House Pick</p>
+              <strong>Reserve Bourbon</strong>
+              <span>Small-batch aged</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="shop">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow accent">Shop</p>
+              <h3>Our collection</h3>
+            </div>
+            <div class="filter-group" aria-label="Filter products by category">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="Beer">Beer</button>
+              <button class="filter-btn" data-filter="Wine">Wine</button>
+              <button class="filter-btn" data-filter="Spirits">Spirits</button>
+              <button class="filter-btn" data-filter="Mixers">Mixers</button>
+              <button class="filter-btn" data-filter="Snacks">Snacks</button>
+            </div>
+          </div>
+
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow accent">Why customers choose us</p>
+            <h3>Local expertise, premium selections, and quick service.</h3>
+            <p>
+              Old Town Liquor brings together flagship favorites and hand-picked craft
+              brands to help your next gathering feel a little more special.
+            </p>
+          </div>
+
+          <div class="about-points">
+            <div>
+              <strong>Fast pickup</strong>
+              <span>Order online and grab your items the same day.</span>
+            </div>
+            <div>
+              <strong>Expertly curated</strong>
+              <span>Carefully selected bottles and pantry favorites.</span>
+            </div>
+            <div>
+              <strong>Friendly service</strong>
+              <span>Helpful guidance for gifts, hosting, and everyday favorites.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h4>Old Town Liquor</h4>
+          <p>123 Main Street • Open daily 10am–9pm</p>
+        </div>
+        <div>
+          <p>Questions? Email hello@oldtownliquor.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <aside id="cartPanel" class="cart-panel" aria-label="Shopping cart">
+      <div class="cart-panel-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="close-cart" aria-label="Close cart">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Subtotal</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </aside>
+
+    <div id="cartOverlay" class="cart-overlay" aria-hidden="true"></div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
